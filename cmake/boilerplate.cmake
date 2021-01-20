@@ -73,7 +73,7 @@ link_libraries(
 
 macro(set_softdevice softdevice)
     # FIXME: Brittle
-    if (EXISTS "${SDK_ROOT}/components/softdevice/${softdevice}/hex/${softdevice}_nrf52_7.0.1_softdevice.hex")
+    if (EXISTS "${SDK_ROOT}/components/softdevice/${softdevice}/hex/${softdevice}_nrf52_7.2.0_softdevice.hex")
         string(TOUPPER ${softdevice} SOFTDEVICE_FLAG)
         add_compile_definitions(
                 SOFTDEVICE_PRESENT
